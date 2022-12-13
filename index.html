@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Agota Kovacs">
+        <meta name="keywords" content="ONG, dramaterapie, liceu">
+        <meta name="description" content="Vitamina #23 este o organizație non-guvernamentală care sprijină educația și formarea tinerilor prin dramaterapie.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Vitamina #23
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(236,176,248);
+        }
+        h2 {
+          font-weight: bold;
+          font-size: 300%;
+          text-align: center;
+          text-transform: uppercase;
+          padding-top: 30px;
+        }
+
+        /* navbar */      
+        .main-navbar {
+            background-color: rgb(255,209,18);
+            border-bottom: 1px solid black;
+        }
+        .main-navbar .navbar-brand {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+        .main-navbar .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: bottom;
+        }
+        .main-navbar .nav-link {
+            color: black;
+        }
+        .main-navbar .nav-link:hover {
+            text-decoration: underline;
+        }
+        .navbar-collapse {
+          justify-content: space-between;
+        }
+
+        /* card despre*/
+        .row {
+          text-align: center;
+          align-items: center;
+        }
+        .card2 {
+          background-color: rgb(212, 245, 118);
+          margin: 20px;
+          padding: 20px;
+          border-radius: 30% 0 0 0;
+        }
+        .card3 {
+          background-color: rgb(255, 170, 90) ;
+          padding: 20px;
+          margin: 20px;
+          border-radius: 0 30% 0 0;
+        }
+        .card4 {
+          background-color: rgb(214, 230, 245);
+          padding: 20px;
+          margin: 20px;
+          border-radius: 30% 0 0 0;
+        }
+        .card-title {
+          padding: 30px;
+        }        
+
+        /* aplica */
+        .mijloc {
+          text-align: center;
+        }
+        
+        /* accordion */
+        .accordion-body {
+          background-color: rgb(255,209,201);
+          padding: 20px;
+        }
+        .accordion-item {
+          margin: 20px;          
+        }
+        .accordion-button {
+          background-color: rgb(251,187,213);
+          border: 1px solid black;
+        }
+
+        /* cards-echipa */
+        .card-echipa {
+          background-color: white;
+          padding: 20px;
+          margin: 20px;
+        }
+
+        /* galerie */
+        .img-home {
+          margin: 20px 0;
+          padding: 0;
+        }
+
+        /* footer */
+        footer {
+          background-color: rgb(110,162,247);
+        }
+        .culoare {
+          color: white;
+        }
+        .img-f {
+          width: 50px;
+        }            
+    
+    </style>
+
+    <body>
+      <header class="navbar navbar-expand-md main-navbar sticky-top">
+        <nav class="container-xxl">
+            <h1 class="navbar-brand">
+              <a class="nav-link" href="index.html">
+                <img src="vitamin1.png"> 
+                  Vitamina #23
+              </a>
+            </h1>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="collapse navbar-collapse" id="mainMenu">
+              <ul class="nav main-menu flex-column flex-md-row">
+                <li class="nav-item"><a class="nav-link" href="#despre">Despre noi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aplica">Aplică</a></li>
+                <li class="nav-item"><a class="nav-link" href="#echipa">Echipa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+              </ul>                    
+              <a href="https://bubblespop.netlify.app/" class="btn btn-outline-dark" target="_blank" role="button">
+                Donează
+              </a>
+            </div>
+            </nav>
+        </header>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="carousel/car1.jpg" class="d-block w-100" alt="două fete zâmbitoare dintre care una are o cafea în mână și arată semnul păcii">
+            </div>
+            <div class="carousel-item">
+              <img src="carousel/car2.jpg" class="d-block w-100" alt="piatră, hârtie, foarfecă">
+            </div>
+            <div class="carousel-item">
+              <img src="carousel/car3.jpg" class="d-block w-100" alt="oameni care formează cu degetele o stea">
+            </div>
+            <div class="carousel-item">
+              <img src="carousel/car4.jpg" class="d-block w-100" alt="patru voluntari cu tricouri albastre">
+            </div>
+            <div class="carousel-item">
+              <img src="carousel/car5.jpg" class="d-block w-100" alt="unitatea echipei sugerată prin lipirea mâinilor deasupra mesei">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          
+        <h2 id="despre">Despre noi</h2>
+        <div class="row g-0 align-items-stretch">
+          <div class="col-sm-12 col-lg-4">
+            <div class="card2">
+              <div class="card-body">
+                <h3 class="card-title">De ce este nevoie de dramaterapie în licee?</h3>
+                <p class="card-text">Perioada liceului presupune multe schimbări pe toate planurile, care pot deveni greu de gestionat. Exteriorizarea emoțiilor, gândurilor, discuția liberă despre ele într-un spațiu sigur și protejat, contribuie considerabil la starea de bine. Explorarea în ritmul propriu a ceea ce se află în interior, prin exerciții interactive și lucru în echipă, ajută la evoluția personală. Autocunoașterea și echilibrul emoțional sunt importante în dezvoltarea personală și funcționarea sănătoasă a tinerilor.</p>
+                <a href="https://www.voluntar.ro/stiri/drepturile-si-responsabilitatile-voluntarilor/" target="_blank" class="btn btn-outline-dark">Voluntariat</a>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-lg-4">
+            <div class="card3">
+              <div class="card-body">
+                <h3 class="card-title">Ce este dramaterapia?</h3>
+                <p class="card-text">Dramaterapia combină teatrul cu psihoterapia. Elementele împrumutate din lumea teatrului (improvizare, punere în scenă, jocuri de rol) permit participanților o mai bună înțelegere a propriilor emoții. Este o metodă inedită de educație și formare în școlile din România, prin care se pune accent pe creativitate și terapie prin joc. Dramaterapia dezvoltă abilitățile de comunicare și de socializare, iar în urma acestor întâlniri, elevii își dezvoltă capacitatea de a fi empatici cu ceilalți, învață despre ce înseamnă responsabilitatea într-o comunitate, își îmbogățesc bagajul de cultură generală și își îmbunătățesc stima de sine.</p>
+                <a href="https://www.youtube.com/watch?v=BU-IUNx9Ftw" target="_blank" class="btn btn-outline-dark">Video explicativ</a>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-lg-4">
+            <div class="card4">
+              <div class="card-body">
+                <h3 class="card-title">Cum funcționează?</h3>
+                <p class="card-text">Suntem un intermediar între dramaterapeuți și licee. Practic, facem posibilă mulțumită donațiilor organizarea unor întâlniri de dramaterapie în cadrul liceului. Școlile pot aplica pentru programul nostru pe acest site, iar noi vom face legătura cu unul dintre dramaterapeuții implicați în acest proiect. Dacă se ajunge la un acord, vă vom transmite care sunt pașii de urmat, iar la data stabilită dramaterapeutul, împreună cu voluntarii noștri, vor veni la voi la liceu.
+                </p>
+                <a href="#aplica" class="btn btn-outline-dark">Detalii</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-4">
+              <img src="aplica/aplica1.jpg" alt="zece mâini puse pe trunchiul unui copac">
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <h2 id="aplica">Aplică</h2>
+              <p class="mijloc">
+                Dacă ești profesor la un liceu din România și dorești să faci parte împreună cu un grup de elevi din programul nostru, trimite-ne un e-mail pe adresa vitamina23@dramaterapie.ro cu subiectul „Aplică”. E-mailul trebuie să conțină numele liceului, județul în care se află și numărul elevilor care doresc să participe.
+              </p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <img src="aplica/aplica2.jpg" alt="un băiat care citește o carte într-o bibliotecă plină de cărți">
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item col-lg-8 col-sm-12">
+            <h3 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Școala Altfel
+              </button>
+            </h3>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Din 2019 încoace, în cadrul Programului Național „Școala Altfel”, dramaterapeuta Raluca Pop propune o serie de exerciții prin care elevii de liceu învață instrumente necesare pentru dezvoltarea lor emoțională. Tinerii interacționează cu profesioniști din domeniul teatrului într-un mod aparte. Atelierul cuprinde exerciții de improvizație, orientare în spațiu, memorie, dicție și jocuri de dezvoltare personală. Durata unei sesiuni este de 100 de minute. În 2022, am ajuns cu proiectul Ralucăi în 14 licee din țară. Elevii au învățat despre acceptare, implicare și renunțare, și-au dezvoltat imaginația și le-a fost încurajată creativitatea. </div>
+            </div>
+          </div>
+          <div class="accordion-item col-lg-8 col-sm-12">
+            <h3 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Ultima Oră de Dirigenție
+              </button>
+            </h3>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Programul nostru „Ultima Oră de Dirigenție” este o pregătire conștientă pentru vacanța de vară, mai exact o introducere și simulare a situațiilor neprevăzute din timpul verii. Proiectul are loc într-o oră de dirigenție din ultima lună a anului școlar și este coordonat de un dramaterapeut. Durata întâlnirii este de 50 de minute. Se va face o prezentare de 15 minute a unor situații cheie, după care vor avea loc exerciții de improvizație. Scopul programului este de a da cunoaște mai bine situațiile greu de gestionat specifice perioadelor de vacanță.</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="echipa">Echipa</h2>
+        <div class="row g-0 align-items-stretch">
+          <div class="col-sm-12 col-lg-3">
+            <div class="card-echipa">
+              <div class="card-body">
+                <img src="cards/echipa1.png" alt="profilul unei femei brunete cu părul creț">
+                <h3 class="card-title">Andreea Ionescu</h3>
+                <p class="card-text">Andreea este studentă la Litere, iubește dansul contemporan și cărțile de autoficțiune.</p>
+                <button type="button" class="btn btn-secondary">Sesiuni<span class="badge text-bg-secondary">8</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="card-echipa">
+              <div class="card-body">
+                <img src="cards/echipa2.png" alt="profilul unui bărbat brunet cu părul scurt, cămașă albastră și cravată">
+                <h3 class="card-title">Alexandru Tisa</h3>
+                <p class="card-text">Alex este voluntar la cinci ONG-uri, îi place să mănânce curry și să se uite la emisiuni politice.</p>
+                <button type="button" class="btn btn-secondary">Sesiuni<span class="badge text-bg-secondary">5</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="card-echipa">
+              <div class="card-body">
+                <img src="cards/echipa3.png" alt="profilul unui bărbat șaten cu părul scurt, cămașă albă și cravată">
+                <h3 class="card-title">George Popescu</h3>
+                <p class="card-text">George are trei pisici, citește în fiecare dimineață câte o poezie și detestă pepenele fără sâmburi.</p>
+                <button type="button" class="btn btn-secondary">Sesiuni<span class="badge text-bg-secondary">13</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="card-echipa">
+              <div class="card-body">
+                <img src="cards/echipa4.png" alt="profilul unei femei brunete cu bluză portocalie">
+                <h3 class="card-title">Cristina Mitroiu</h3>
+                <p class="card-text">Cris e pasionată de poduri, colecționează baterii și nu își asortează niciodată șosetele.</p>
+                <button type="button" class="btn btn-secondary">Sesiuni<span class="badge text-bg-secondary">3</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h2 id="galerie">Galerie</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">                       
+              <img class="img-home" src="galerie/home1.jpg" alt="oameni cu pixuri în mână dezbat idei, scriu și desenează pe hârtii mari și albe">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img class="img-home" src="galerie/home2.jpg" alt="mâini care desenează pe o hârtie mare pusă vertical">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img class="img-home" src="galerie/home3.jpg" alt="trei persoane cu o bibliotecă în spate, râd în fața unui laptop ">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img class="img-home" src="galerie/home4.jpg" alt="fotografie făcută de sus cu două persoane care dau mâna deasupra laptopurilor">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">                       
+              <img class="img-home" src="galerie/home5.jpg" alt="patru persoane se uită în jos spre cameră și zâmbesc">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img class="img-home" src="galerie/home6.jpg" alt="cinci persoane zâmbitoare așezate una lângă cealaltă">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img class="img-home" src="galerie/home7.jpg" alt="cinci persoane așezate cu spatele se uită spre telegondola care trece peste o apă ">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img class="img-home" src="galerie/home8.jpg" alt="palme lipite pe care s-a pictat o inimă">
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="text-center mb-3 mt-3">                
+                <a class="middle" href="index.html"><img src="vitamin1.png"></a> 
+                <p>E-mail: <span class="culoare">vitamina23@dramaterapie.ro</span></p>
+                <p>Ne găsești aici: </p>
+                <a href="https://www.facebook.com/" target="_blank"><img class="img-f" src="f1.png" alt="logo facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="img-f" src="f2.png" alt="logo instagram"></a>
+                <p>&#169; Vitamina #23</p>
+              </div>
+            </div>          
+          </div>
+        </footer>        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
